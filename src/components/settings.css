@@ -1,0 +1,147 @@
+.Setting {
+    flex-shrink: 0;
+}
+.Setting > div {
+    line-height: 0;
+}
+
+.Setting__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    padding: 0 30px;
+}
+
+.Setting__content div {
+    padding-left: 50px;
+}
+
+.Setting__dropdown {
+    position: absolute;
+    left: -5vw;
+    top: 0;
+    background-color: var(--backgroundColor, #fff);
+    z-index: 10;
+    width: 100vw;
+    padding: 28px 5vw 26px;
+    box-shadow: 0 2px 6px rgba(40, 36, 35, 0.1);
+    transition: opacity 0.3s ease-in, visibility 0s 0.3s;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.Setting_open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in, visibility 0s;
+}
+
+.Setting__view {
+    cursor: pointer;
+    width: 50px;
+}
+.Setting__view path {
+    stroke: var(--textColor, #282423);
+    transition: stroke 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.Setting__view:hover path {
+    stroke: darkgrey;
+}
+.Setting__view svg {
+    width: 20px;
+}
+
+.Setting__aside {
+    position: absolute;
+    top: 25px;
+    right: calc(5vw + 45px);
+}
+
+.Setting_close, .Setting__restart {
+    display: block;
+    padding: 5px;
+}
+
+.Setting__close {
+    margin-bottom: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.Setting__setting-title {
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--textColor, black);
+}
+
+.Setting__button {
+    height: 38px;
+    padding: 4px 18px 0;
+    margin-top: 16px;
+}
+
+.Setting__button:before {
+    border-color: transparent;
+}
+
+.Setting__button {
+    margin-left: 14px;
+}
+
+.Setting__button.Button_default:not(.Button_disabled):hover .Button__text {
+     color: black !important
+ }
+
+.Setting__button .Button .Setting__button__text {
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--textColor, black);
+}
+
+.Setting__button_other-font {
+    font-family: serif;
+}
+
+.Setting__button_font {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+.Setting__font {
+    padding-top: 50px;
+}
+
+.Setting__button_color-standard {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.Setting__button_color-contrast {
+    background-color: #F3F3F3;
+    color: black !important;
+}
+
+.Setting__button_color-inversion {
+    background-color: #282423;
+    color: #fff !important;
+}
+
+.Setting__button_spacing-middle {
+    letter-spacing: 0.2em;
+}
+
+.Setting__button_spacing-large {
+    letter-spacing: 0.35em;
+}
+
+.Setting .active {
+     border: 2px solid orangered;
+}

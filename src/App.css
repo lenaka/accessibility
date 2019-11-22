@@ -1,22 +1,25 @@
-.App {
-  text-align: center;
+body, p, h1 {
+  background-color: var(--backgroundColor, #fff);
+  color: var(--textColor, #999999);
+  letter-spacing: var(--letterSpacing, 'normal');
+  font-family: var(--font, 'Arial');
 }
 
-.App-logo {
-  height: 40vmin;
+p, h1 {
+  padding: 10px 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HobbitPicture {
+  width: 100vw;
+  vertical-align: middle;
+}
+
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+img {
+  display: var(--isShowImage, 'block');
+  border: 1px solid #cccccc;
+  background-color: white;
 }
